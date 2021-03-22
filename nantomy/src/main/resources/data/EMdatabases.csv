@@ -1,9 +1,9 @@
-﻿Cell image library;http://www.cellimagelibrary.org/home;ASCB;Cell biology;Many;LM/EM, typically not big data
-EMPIAR;https://www.ebi.ac.uk/pdbe/emdb/empiar/;EMBL;Protein structures, bacteria, virus etc.;Many;Tomography, single molecule
-Umich Virtual Microscopy;https://histology.medicine.umich.edu/resources/;University of Michican;Cell biology;Several;TEM
-IDR;http://idr.openmicroscopy.org/about/;University of Dundee;Many;Many;Mainly LM, FM
-Nanotomy;http://www.nanotomy.org;UMC Groningen;T1D, stem cells, basics in cell biology;Many;2D S(T)EM, epon, probes, EDX
-Neurodata;https://neurodata.io/data/hildebrand17/;Harvard University;Neuroscience (brain);Larval zebrafish;ssEM
-Radboud UMC;https://www.radboudumc.nl/afdelingen/pathologie/beelden-pathologie;RUMC Nijmegen;EM of muscle and neuroscience;Human;EM
-VMD;http://virtualmicroscopydatabase.org;American Association Anotomists;Histopathology;Human;LM, histology
-BISE;http://www.biii.eu;Neubias [COST];Bio Image Analysis;-;-
+﻿Cell image library;ASCB;Cell biology;Many;LM/EM, typically not big data
+EMPIAR;EMBL;Protein structures, bacteria, virus etc.;Many;Tomography, single molecule
+UMich Virtual Microscopy;University of Michican;Cell biology;Several;TEM
+IDR;University of Dundee;Many;Many;Mainly LM, FM
+Nanotomy;UMC Groningen;T1D, stem cells, basics in cell biology;Many;2D S(T)EM, epon, probes, EDX
+Neurodata;Harvard University;Neuroscience (brain);Larval zebrafish;ssEM
+Radboud UMC;RUMC Nijmegen;EM of muscle and neuroscience;Human;EM
+VMD;American Association Anotomists;Histopathology;Human;LM, histology
+BISE;Neubias [COST];Bio Image Analysis;-;-
