@@ -30,6 +30,7 @@ public class CsvParser {
                     String datasetLink = elements[5];
 
                     Publication publication  = new Publication(year, author, journalDatabase, journalLink, EMDataset, datasetLink);
+                    
                     publications.add(publication);
                 }
             }
