@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CsvParser {
-    public static List<Publications> parsePublications(){
-        Path path = Paths.get("~/data/Publicatielist.csv");
+    public static List<Publication> parsePublications(){
+        Path path = Paths.get("src/main/resources/data/publications.csv");
 
-        List<Publications> publications = new ArrayList<>();
+        List<Publication> publications = new ArrayList<>();
 
         try (BufferedReader bufferedReader = Files.newBufferedReader(path)){
             String line;
@@ -25,10 +25,12 @@ public class CsvParser {
                     String year = elements[0];
                     String author = elements[1];
                     String journalDatabase = elements[2];
-                    String shortTitle = elements[3];
-                    String link = elements[4];
+                    String journalLink = elements[3];
+                    String EMDataset = elements[4];
+                    String datasetLink = elements[5];
 
-                    Publications publication  = new Publications(year, author, journalDatabase, shortTitle, link);
+                    Publication publication  = new Publication(year, author, journalDatabase, journalLink, EMDataset, datasetLink);
+                    
                     publications.add(publication);
                 }
             }
