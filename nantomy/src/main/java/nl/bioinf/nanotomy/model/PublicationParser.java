@@ -27,9 +27,10 @@ public class PublicationParser {
                 String datasetLink = elements[5];
 
                 Publication publication  = new Publication(year, author, journalDatabase, journalLink, EMDataset, datasetLink);
+                    
                 publications.add(publication);
-            }
-        } catch (IOException ex){
+                }
+        } catch (IOException ex) {
             ex.printStackTrace();
         }
         return publications;
