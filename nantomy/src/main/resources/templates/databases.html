@@ -1,0 +1,51 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Nanotomy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div th:insert="~{template :: basenavbar}"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 pt-2">
+            <h2>Large-scale electron microscopy (EM) datasets in biomedical research</h2>
+            <p>For addition of websites, please contact</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 pt-2">
+            <font size="2">
+                <table class="table table-bordered table-sm">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Website</th>
+                        <th scope="col">Organization</th>
+                        <th scope="col">Topics</th>
+                        <th scope="col">Species</th>
+                        <th scope="col">Main techniques</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="database:${databases}">
+                        <td><a th:href="@{${database.getWebsiteLink()}}"
+                               th:text="${database.getWebsite()}" class="text-body">_offline website_</a></td>
+                        <td th:text="${database.getOrganization()}">_offline organization_</td>
+                        <td th:text="${database.getTopics()}">_offline topics_</td>
+                        <td th:text="${database.getSpecies()}">_offline species_</td>
+                        <td th:text="${database.getMainTechniques()}">_offline technique_</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </font>
+        </div>
+    </div>
+</div>
+</body>
+</html>
