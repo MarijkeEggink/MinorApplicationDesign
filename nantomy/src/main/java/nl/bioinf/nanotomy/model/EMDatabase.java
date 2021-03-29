@@ -40,4 +40,16 @@ public class EMDatabase {
     public String getMainTechniques() {
         return mainTechniques;
     }
+
+    @Override
+    public String toString() {
+        return "EMDatabase{" +
+                "website='" + website + '\'' +
+                ", websiteLink='" + websiteLink + '\'' +
+                ", organization='" + organization + '\'' +
+                ", topics='" + topics + '\'' +
+                ", species='" + species + '\'' +
+                ", mainTechniques='" + mainTechniques + '\'' +
+                '}';
+    }
 }

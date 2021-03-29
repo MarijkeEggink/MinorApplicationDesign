@@ -30,4 +30,9 @@ public class HomeController {
         model.addAttribute("databases", databases);
         return "databases";
     }
+
+    @GetMapping(value = "/login")
+    public String getLoginPage(){
+        return "login";
+    }
 }

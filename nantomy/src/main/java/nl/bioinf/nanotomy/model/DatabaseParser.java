@@ -16,26 +16,29 @@ public class DatabaseParser {
 
         try (BufferedReader reader = Files.newBufferedReader(path)){
             String line;
-            int lineNumber = 0;
 
             while ((line = reader.readLine()) != null){
-                lineNumber ++;
-                if (lineNumber > 1){
-                    String[] elements = line.split(";");
-                    String website = elements[0];
-                    String websiteLink = elements[1];
-                    String organization = elements[2];
-                    String topics = elements[3];
-                    String species = elements[4];
-                    String mainTechniques = elements[5];
-
-                    EMDatabase database = new EMDatabase(website, websiteLink, organization, topics, species, mainTechniques);
-                    databases.add(database);
+                String[] elements = line.split(";");
+                String website = elements[0];
+                String websiteLink = elements[1];
+                String organization = elements[2];
+                String topics = elements[3];
+                String species = elements[4];
+                String mainTechniques = elements[5];
+                EMDatabase database = new EMDatabase(website, websiteLink, organization, topics, species, mainTechniques);
+                databases.add(database);
                 }
-            }
-        } catch (IOException ex){
-            ex.printStackTrace();
+            } catch (IOException exception) {
+            exception.printStackTrace();
         }
         return databases;
+    }
+
+    public static void main(String[] args) {
+        List<EMDatabase> databases = parseDatabases();
+
+        for (EMDatabase database: databases){
+            System.out.println(database.toString());
+        }
     }
 }
