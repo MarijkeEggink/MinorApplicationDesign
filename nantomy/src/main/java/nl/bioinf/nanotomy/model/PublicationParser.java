@@ -8,6 +8,11 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class parses the data from publications.tsv,
+ * this tsv file contains each publication from nanotomy.org
+ * @version 1.0
+ */
 public class PublicationParser {
     public static List<Publication> parsePublications(){
         Path path = Paths.get("src/main/resources/data/publications.tsv");

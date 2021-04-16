@@ -1,5 +1,9 @@
 package nl.bioinf.nanotomy.model;
 
+/**
+ * This class holds publications
+ * @version 1.0
+ */
 public class Publication {
      private final String year;
      private final String authors;

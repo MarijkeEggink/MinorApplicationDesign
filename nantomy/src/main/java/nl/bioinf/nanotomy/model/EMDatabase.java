@@ -1,5 +1,9 @@
 package nl.bioinf.nanotomy.model;
 
+/**
+ * This class hold EM databases
+ * @version 1.0
+ */
 public class EMDatabase {
     private final String website;
     private final String websiteLink;
@@ -41,15 +45,4 @@ public class EMDatabase {
         return mainTechniques;
     }
 
-    @Override
-    public String toString() {
-        return "EMDatabase{" +
-                "website='" + website + '\'' +
-                ", websiteLink='" + websiteLink + '\'' +
-                ", organization='" + organization + '\'' +
-                ", topics='" + topics + '\'' +
-                ", species='" + species + '\'' +
-                ", mainTechniques='" + mainTechniques + '\'' +
-                '}';
-    }
 }

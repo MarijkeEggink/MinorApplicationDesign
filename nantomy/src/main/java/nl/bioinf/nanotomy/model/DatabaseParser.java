@@ -8,7 +8,14 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This class parses the data from EMdatabases.csv,
+ * this csv file contains information about other EM databases.
+ * @version 1.0
+ * @author Marijke Eggink, Bart Engels, Jelle Becirspahic
+ */
 public class DatabaseParser {
+    // file not found error?
     public static List<EMDatabase> parseDatabases(){
         Path path = Paths.get("src/main/resources/data/EMdatabases.csv");
 
@@ -32,13 +39,5 @@ public class DatabaseParser {
             exception.printStackTrace();
         }
         return databases;
-    }
-
-    public static void main(String[] args) {
-        List<EMDatabase> databases = parseDatabases();
-
-        for (EMDatabase database: databases){
-            System.out.println(database.toString());
-        }
     }
 }
